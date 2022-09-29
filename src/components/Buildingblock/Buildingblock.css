@@ -1,0 +1,6 @@
+.buildingblock{
+    display : grid;
+    grid-template-columns: 3fr 1fr;
+    padding-left: 50px;
+    background-color: bisque;
+}
