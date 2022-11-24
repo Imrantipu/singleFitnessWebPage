@@ -9,11 +9,11 @@ const LeftSideTop = () => {
           <img style={{height:"70px " ,borderRadius:"10px"}} src={img} alt="" />
         </div>
         <div style={{ marginLeft: "20px" }}>
-          <h4 className="text-3xl">Fitness Freak</h4>
+          <h4 className="text-3xl text-fuchsia-600">Fitness Freak</h4>
         </div>
       </div>
       <div style={{ marginTop: "30px", color:'white'}}>
-        <h5 className="text-2xl">Select today’s exercise</h5>
+        <h5 className="text-2xl text-rose-200">Select today’s exercise</h5>
       </div>
     </div>
   );
