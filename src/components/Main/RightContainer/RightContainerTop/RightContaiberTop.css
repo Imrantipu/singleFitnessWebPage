@@ -1,0 +1,12 @@
+.img-style{
+    display:flex;
+    align-items: center;
+
+}
+.img-style img {
+    border-radius: 50%;
+    height: 50px;
+}
+.img-style h4{
+    margin-left: 20px;
+}

@@ -1,10 +1,11 @@
 import React from 'react';
+import RightContainerTop from './RightContainerTop/RightContainerTop';
 
 
 const RightContainer = () => {
     return (
         <div>
-            <p>This is right container</p>
+          <RightContainerTop></RightContainerTop>
         </div>
     );
 };
