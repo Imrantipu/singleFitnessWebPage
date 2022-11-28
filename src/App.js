@@ -4,7 +4,7 @@ import Main from './components/Main/Main';
 function App() 
 {
   return (
-    <div>
+    <div className='container mx-auto'>
      <Main></Main>
     </div>
   );
