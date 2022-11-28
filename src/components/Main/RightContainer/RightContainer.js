@@ -2,10 +2,10 @@ import React from 'react';
 import RightContainerTop from './RightContainerTop/RightContainerTop';
 
 
-const RightContainer = () => {
+const RightContainer = ({time}) => {
     return (
         <div>
-          <RightContainerTop></RightContainerTop>
+          <RightContainerTop time ={time}></RightContainerTop>
         </div>
     );
 };

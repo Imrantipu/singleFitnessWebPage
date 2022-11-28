@@ -1,11 +1,11 @@
 import React from 'react';
 import LeftSideDown from './LeftSideDown/LeftSideDown';
 import LeftSideTop from './LeftSideTop/LeftSideTop';
-const LeftContainer = () => {
+const LeftContainer = ({options,handleAddTime}) => {
     return (
         <div>
             <LeftSideTop></LeftSideTop>
-            <LeftSideDown></LeftSideDown>
+            <LeftSideDown options= {options} handleAddTime ={handleAddTime}></LeftSideDown>
         </div>
     );
 };

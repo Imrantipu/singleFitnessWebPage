@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import img from "../../../../Assets/Images/imran.png";
+import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import RightContainerAddBreak from '../RightContainerAddBreak/RightContainerAddBreak';
 import "./RightContaiberTop.css"
+let breaks = 0;
 
-const RightContainerTop = () => {
+const RightContainerTop = ({time}) => {
+  const [breakTime, setBreakTime] = useState(0);
+  
+
+  const handleBreakTime = (time) => {
+    breaks = time;
+    setBreakTime(breaks);
+  };
     return (
         <div
       style={{
@@ -23,7 +32,8 @@ const RightContainerTop = () => {
         people like you to lose weight without breaking a sweat. We help
         athletes to up their game through proper nutrition.
       </p>
-      <RightContainerAddBreak></RightContainerAddBreak>
+      <RightContainerAddBreak handleBreakTime={handleBreakTime}></RightContainerAddBreak>
+       <ExerciseDetails time={time} breakTime={breakTime}></ExerciseDetails>
       </div>
     );
 };

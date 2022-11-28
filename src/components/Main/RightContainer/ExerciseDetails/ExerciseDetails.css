@@ -1,0 +1,8 @@
+.details-time{
+    display: flex;
+    height: 60px;
+    justify-content:space-between;
+    background-color:indigo ;
+    border-radius: 5px;
+    align-items: center;
+}

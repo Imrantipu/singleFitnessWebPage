@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExerciseOptions = ({ option }) => {
+const ExerciseOptions = ({ option ,handleAddTime}) => {
   const { img, title, time } = option;
   return (
     <div>
@@ -16,7 +16,9 @@ const ExerciseOptions = ({ option }) => {
           <h2 className="card-title font-medium text-orange-300">{title}</h2>
           <p>Time required: {time}s</p>
           <div className="card-actions">
-            <button className="btn btn-primary">Add to list</button>
+            <button 
+            onClick={() => handleAddTime(option)}
+            className="btn btn-primary">Add to list</button>
           </div>
         </div>
       </div>
